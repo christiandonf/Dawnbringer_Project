@@ -1,0 +1,86 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://Assets/Actor/Player.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Actor/Character.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Assets/Sprites/Mago2 andando.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Actor/Weapon.tscn" type="PackedScene" id=4]
+[ext_resource path="res://icon.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Sprites/Mago2iddle.png" type="Texture" id=6]
+
+[sub_resource type="AtlasTexture" id=2]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 0, 0, 320, 320 )
+
+[sub_resource type="AtlasTexture" id=3]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 320, 0, 320, 320 )
+
+[sub_resource type="AtlasTexture" id=4]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 640, 0, 320, 320 )
+
+[sub_resource type="AtlasTexture" id=5]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 960, 0, 320, 320 )
+
+[sub_resource type="AtlasTexture" id=6]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 1280, 0, 320, 320 )
+
+[sub_resource type="AtlasTexture" id=7]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 1600, 0, 320, 320 )
+
+[sub_resource type="AtlasTexture" id=8]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 1920, 0, 320, 320 )
+
+[sub_resource type="AtlasTexture" id=9]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 2240, 0, 320, 320 )
+
+[sub_resource type="SpriteFrames" id=10]
+animations = [ {
+"frames": [ ExtResource( 6 ) ],
+"loop": true,
+"name": "iddle",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ) ],
+"loop": true,
+"name": "run",
+"speed": 5.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=1]
+
+[node name="Player" type="KinematicBody2D"]
+position = Vector2( 362, 174 )
+script = ExtResource( 1 )
+
+[node name="PlayerSprite" type="AnimatedSprite" parent="."]
+scale = Vector2( 0.4, 0.4 )
+frames = SubResource( 10 )
+animation = "iddle"
+speed_scale = 2.0
+playing = true
+
+[node name="WalkDirection" type="Sprite" parent="."]
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 5 )
+offset = Vector2( 90, 0 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Character" parent="." instance=ExtResource( 2 )]
+
+[node name="Weapon" parent="." instance=ExtResource( 4 )]

@@ -1,0 +1,47 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Assets/Class/CharacteBaseStats.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+class_type = "Mage"
+health = 200
+mana = 250
+attack = 15
+defense = 0
+dexterity = 15
+speed = 15
+vitality = 5
+wisdown = 20
+max_health = 625
+max_mana = 600
+max_attack = 65
+max_defense = 20
+max_dexterity = 65
+max_speed = 55
+max_vitality = 40
+max_wisdown = 75
+health_min_scale = 14
+mana_min_scale = 8
+attack_min_scale = 1
+defense_min_scale = 0
+dexterity_min_scale = 1
+speed_min_scale = 0
+vitality_min_scale = 1
+wisdown_min_scale = 1
+health_max_scale = 16
+mana_max_scale = 12
+attack_max_scale = 2
+defense_max_scale = 0
+dexterity_max_scale = 2
+speed_max_scale = 1
+vitality_max_scale = 1
+wisdown_max_scale = 2
+health_bonus_scale = 18
+mana_bonus_scale = 25
+attack_bonus_scale = 3
+defense_bonus_scale = 0
+dexterity_bonus_scale = 3
+speed_bonus_scale = 3
+vitality_bonus_scale = 2
+wisdown_bonus_scale = 3

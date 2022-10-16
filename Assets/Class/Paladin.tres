@@ -1,0 +1,47 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Assets/Class/CharacteBaseStats.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+class_type = ""
+health = 0
+mana = 0
+attack = 0
+defense = 0
+dexterity = 0
+speed = 0
+vitality = 0
+wisdown = 0
+max_health = 0
+max_mana = 0
+max_attack = 0
+max_defense = 0
+max_dexterity = 0
+max_speed = 0
+max_vitality = 0
+max_wisdown = 0
+health_min_scale = 0
+mana_min_scale = 0
+attack_min_scale = 0
+defense_min_scale = 0
+dexterity_min_scale = 0
+speed_min_scale = 0
+vitality_min_scale = 0
+wisdown_min_scale = 0
+health_max_scale = 0
+mana_max_scale = 0
+attack_max_scale = 0
+defense_max_scale = 0
+dexterity_max_scale = 0
+speed_max_scale = 0
+vitality_max_scale = 0
+wisdown_max_scale = 0
+health_bonus_scale = 0
+mana_bonus_scale = 0
+attack_bonus_scale = 0
+defense_bonus_scale = 0
+dexterity_bonus_scale = 0
+speed_bonus_scale = 0
+vitality_bonus_scale = 0
+wisdown_bonus_scale = 0
